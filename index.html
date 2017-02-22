@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS-каналы"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Поиск"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -89,7 +89,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/17/index/" data-id="ciz9fg2v900002gch19tdbixb" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/02/17/index/" data-id="ciz9fg2v900002gch19tdbixb" class="article-share-link">Поделиться</a>
       
       
     </footer>
@@ -134,7 +134,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/02/17/hello-world/" data-id="ciz9fg2w400022gch8tie6ib8" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/02/17/hello-world/" data-id="ciz9fg2w400022gch8tie6ib8" class="article-share-link">Поделиться</a>
       
       
     </footer>
@@ -166,44 +166,29 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Codecademy"><a href="#Codecademy" class="headerlink" title="Codecademy"></a>Codecademy</h1><h2 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h2><p>评论在CSS中所指的斜杠,星号。</p>
-<ul>
-<li>例子</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/* This is a single line comment */</div></pre></td></tr></table></figure>
-<ul>
-<li>例子</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/* This is a multi-line comment */</div></pre></td></tr></table></figure>
-<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>选择器中定义的属性是通过定义一个属性和一个值。 他们用冒号分隔和划定一个分号。</p>
+        <h1 id="CSS属性和选择器"><a href="#CSS属性和选择器" class="headerlink" title="CSS属性和选择器"></a>CSS属性和选择器</h1><h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>选择器中定义的属性是通过定义一个属性和一个值。 他们用冒号分隔和划定一个分号。</p>
 <h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">selector &#123;</div><div class="line">  property: value;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <ul>
 <li>例子</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">h1 &#123;</div><div class="line">  color: blue;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li><p>阅读更多</p>
-<ul>
-<li><a href="http://www.htmldog.com/reference/cssproperties/" target="_blank" rel="external">http://www.htmldog.com/reference/cssproperties/</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="许多属性定义"><a href="#许多属性定义" class="headerlink" title="许多属性定义"></a>许多属性定义</h2><p>每一个CSS规则可以有尽可能多的属性。 他们每个人适用于元素选择器适用于。</p>
+<h3 id="许多属性定义"><a href="#许多属性定义" class="headerlink" title="许多属性定义"></a>许多属性定义</h3><p>每一个CSS规则可以有尽可能多的属性。 他们每个人适用于元素选择器适用于。</p>
 <ul>
 <li>例子</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">h1 &#123;</div><div class="line">  font-size: 24px;</div><div class="line">  font-weight: bold;</div><div class="line">  border: 1px solid black;</div><div class="line">  color: pink;</div><div class="line">&#125;</div><div class="line">/* This will make all &lt;h1&gt; headers big, bold, pink, and inside of a thin black rectangle! */</div></pre></td></tr></table></figure>
-<h2 id="填充"><a href="#填充" class="headerlink" title="填充"></a>填充</h2><p>填充的内容和边界之间的间距(元素的边缘)。 我们可以调整这个值用CSS来移动边界接近或远离内容。 在这里,div id为“盒子”将得到10 px周围填充它。</p>
+<h3 id="填充"><a href="#填充" class="headerlink" title="填充"></a>填充</h3><p>填充的内容和边界之间的间距(元素的边缘)。 我们可以调整这个值用CSS来移动边界接近或远离内容。 在这里,div id为“盒子”将得到10 px周围填充它。</p>
 <p>例子</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#box &#123;</div><div class="line">  padding: 10px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="保证金"><a href="#保证金" class="headerlink" title="保证金"></a>保证金</h2><p>保证金是周围的空间元素。 幅度越大,越多我们的元素和元素之间的空间。 我们可以调整保证金将HTML元素接近或远离对方。 这里,div id为“盒子”将得到10 px的上下边缘,和5 px左右的利润。</p>
+<h3 id="保证金"><a href="#保证金" class="headerlink" title="保证金"></a>保证金</h3><p>保证金是周围的空间元素。 幅度越大,越多我们的元素和元素之间的空间。 我们可以调整保证金将HTML元素接近或远离对方。 这里,div id为“盒子”将得到10 px的上下边缘,和5 px左右的利润。</p>
 <ul>
 <li>例子</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#box &#123;</div><div class="line">  margin: 10px 5px 10px 5px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>字体类型</p>
-<p>字体类型属性设置一个HTML元素的文本的字体。</p>
-<p>语法</p>
+<h3 id="字体类型"><a href="#字体类型" class="headerlink" title="字体类型"></a>字体类型</h3><p>字体类型属性设置一个HTML元素的文本的字体。</p>
+<ul>
+<li>语法</li>
+</ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">p &#123;</div><div class="line">  font-family: Arial, Helvetica, sans-serif;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><p>选择器是什么?</p>
 <p>选择器使用HTML,CSS选择地区的风格。 您可以使用几种不同的方法来选择一个元素。</p>
@@ -211,14 +196,7 @@
 <li>语法</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">selector &#123;</div><div class="line">  rules;</div><div class="line">  rules;</div><div class="line">  rules;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<ul>
-<li><p>阅读更多</p>
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started/</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="类名称选择器"><a href="#类名称选择器" class="headerlink" title="类名称选择器"></a>类名称选择器</h2><p>您也可以选择HTML元素的类名。 与ID选择器,类选择器选择与匹配所有元素类。</p>
+<h3 id="类名称选择器"><a href="#类名称选择器" class="headerlink" title="类名称选择器"></a>类名称选择器</h3><p>您也可以选择HTML元素的类名。 与ID选择器,类选择器选择与匹配所有元素类。</p>
 <ul>
 <li>例子</li>
 </ul>
@@ -227,7 +205,7 @@
 <li>例子</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.jumbo &#123;</div><div class="line">  text-size: 1000px;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* HTML Selected: &lt;a href=&quot;http://codecademy.com&quot; class=&quot;link jumbo&quot;&gt;,</div><div class="line">&lt;span class=&quot;jumbo&quot;&gt; */</div></pre></td></tr></table></figure>
-<h2 id="元素选择器"><a href="#元素选择器" class="headerlink" title="元素选择器"></a>元素选择器</h2><p>你可以选择HTML元素首先通过使用元素的名称。</p>
+<h3 id="元素选择器"><a href="#元素选择器" class="headerlink" title="元素选择器"></a>元素选择器</h3><p>你可以选择HTML元素首先通过使用元素的名称。</p>
 <ul>
 <li>例子</li>
 </ul>
@@ -240,7 +218,7 @@
 <li>例子</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">a &#123;</div><div class="line">  text-underline: none;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h2 id="ID选择器"><a href="#ID选择器" class="headerlink" title="ID选择器"></a>ID选择器</h2><p>ID选择器是用于选择只有一个项目在一个页面上。 像这个词(“识别”)表明,ID选择器只会选择第一个元素匹配ID。</p>
+<h3 id="ID选择器"><a href="#ID选择器" class="headerlink" title="ID选择器"></a>ID选择器</h3><p>ID选择器是用于选择只有一个项目在一个页面上。 像这个词(“识别”)表明,ID选择器只会选择第一个元素匹配ID。</p>
 <ul>
 <li>例子</li>
 </ul>
@@ -249,7 +227,7 @@
 <li>例子</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">a#codecademy &#123;</div><div class="line">  color: purple;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* HTML Selected: &lt;a href=&quot;http://codecademy.com&quot; id=&quot;codecademy&quot;&gt; */</div></pre></td></tr></table></figure>
-<h2 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h2><p>HTML元素还能被选中的属性。</p>
+<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><p>HTML元素还能被选中的属性。</p>
 <ul>
 <li>例子</li>
 </ul>
@@ -262,78 +240,46 @@
 <li>例子</li>
 </ul>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">input[required] &#123;</div><div class="line">  border: 1px red solid;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* HTML Selected: &lt;input type=&quot;text&quot; required&gt; */</div></pre></td></tr></table></figure>
-<ul>
-<li><p>阅读更多</p>
-<ul>
-<li><a href="http://dev.opera.com/articles/view/27-css-basics/属性" target="_blank" rel="external">http://dev.opera.com/articles/view/27-css-basics/属性</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="子选择器"><a href="#子选择器" class="headerlink" title="子选择器"></a>子选择器</h2><p>您还可以使用多个选择器来得到你想要的确切的元素,通过父母的嵌套。 通过使用大于符号(&gt;),你可以只选择直接的孩子一个元素,只有一个水平。</p>
+<h3 id="子选择器"><a href="#子选择器" class="headerlink" title="子选择器"></a>子选择器</h3><p>您还可以使用多个选择器来得到你想要的确切的元素,通过父母的嵌套。 通过使用大于符号(&gt;),你可以只选择直接的孩子一个元素,只有一个水平。</p>
 <ul>
 <li>例子</li>
 </ul>
-<p>`ul &gt; li {<br>  display: inline-block<br>}</p>
-<p>/<em> Selects only the first-level list items in all unordered lists in the HTML </em>/`</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">ul &gt; li &#123;</div><div class="line">  display: inline-block</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Selects only the first-level list items in all unordered lists in the HTML */</div></pre></td></tr></table></figure>
 <ul>
 <li>例子</li>
 </ul>
-<p>`ul a {<br>  text-underline: none;<br>}</p>
-<p>/<em> Selects all anchors which have an unordered list their ancestry </em>/`</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">ul a &#123;</div><div class="line">  text-underline: none;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Selects all anchors which have an unordered list their ancestry */</div></pre></td></tr></table></figure>
 <ul>
 <li>例子</li>
 </ul>
-<p>`ul + span {<br>  display: inline;<br>}</p>
-<p>/<em> Selects only spans that directly follow an unordered list </em>/`</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">ul + span &#123;</div><div class="line">  display: inline;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Selects only spans that directly follow an unordered list */</div></pre></td></tr></table></figure>
 <ul>
 <li>例子</li>
 </ul>
-<p>`a ~ h1 {<br>  color: blue;<br>}</p>
-<p>/<em> Selects all h1 elements that are in the general vicinity of an anchor </em>/`</p>
-<ul>
-<li><p>阅读更多</p>
-<ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_selectors" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/CSS/Descendant_selectors</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="通用选择器"><a href="#通用选择器" class="headerlink" title="通用选择器"></a>通用选择器</h2><p>通用选择器(*)可用于选择在特定范围内的所有元素。 请注意,通用选择器是最费力选择器性能,并且应该谨慎使用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">a ~ h1 &#123;</div><div class="line">  color: blue;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Selects all h1 elements that are in the general vicinity of an anchor */</div></pre></td></tr></table></figure>
+<h3 id="通用选择器"><a href="#通用选择器" class="headerlink" title="通用选择器"></a>通用选择器</h3><p>通用选择器(*)可用于选择在特定范围内的所有元素。 请注意,通用选择器是最费力选择器性能,并且应该谨慎使用。</p>
 <ul>
 <li>例子</li>
 </ul>
-<p>`* {<br>  background-color: blue;<br>}</p>
-<p>/<em> Selects ALL HTML elements in the page </em>/`</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">* &#123;</div><div class="line">  background-color: blue;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Selects ALL HTML elements in the page */</div></pre></td></tr></table></figure>
 <ul>
 <li>例子</li>
 </ul>
-<p>`body * {<br>  color: red;<br>}</p>
-<p>/<em> Selects ALL children of the body </em>/`</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">body * &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Selects ALL children of the body */`</div><div class="line"></div><div class="line">- 例子</div><div class="line"></div><div class="line">`div &gt; * &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Selects ALL first-level children of all divs on the page */`</div></pre></td></tr></table></figure>
+<h3 id="伪类选择符"><a href="#伪类选择符" class="headerlink" title="伪类选择符"></a>伪类选择符</h3><p>伪选择器可以用来缩小选择某些规则。</p>
 <ul>
 <li>例子</li>
 </ul>
-<p>`div &gt; * {<br>  color: red;<br>}</p>
-<p>/<em> Selects ALL first-level children of all divs on the page </em>/`</p>
-<h2 id="伪类选择符"><a href="#伪类选择符" class="headerlink" title="伪类选择符"></a>伪类选择符</h2><p>伪选择器可以用来缩小选择某些规则。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">li:first-child &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* </div><div class="line">    This selects only &lt;li&gt; elements that have no elements before them</div><div class="line">    &lt;ul&gt;</div><div class="line">      &lt;li&gt;Selected; will be red&lt;/li&gt;</div><div class="line">      &lt;li&gt;Not selected&lt;/li&gt;</div><div class="line">      &lt;li&gt;Not selected&lt;/li&gt;</div><div class="line">    &lt;/ul&gt;</div><div class="line">*/</div><div class="line"></div><div class="line">li:last-child &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* This does the opposite; only the last &lt;li&gt; will be red. */</div></pre></td></tr></table></figure>
 <ul>
 <li>例子</li>
 </ul>
-<p>`li:first-child {<br>  color: red;<br>}</p>
-<p>/<em><br>    This selects only <li> elements that have no elements before them<br>    <ul><br>      <li>Selected; will be red</li><br>      <li>Not selected</li><br>      <li>Not selected</li><br>    </ul>
-</li></em>/</p>
-<p>li:last-child {<br>  color: red;<br>}</p>
-<p>/<em> This does the opposite; only the last <li> will be red. </li></em>/`</p>
-<ul>
-<li>例子</li>
-</ul>
-<p>`a:hover {<br>  text-decoration: underline;<br>}</p>
-<p>/<em> Will underline all links when the user puts their mouse over them </em>/</p>
-<p>a:active {<br>  font-weight: bold;<br>}</p>
-<p>/<em> Will make all links bold while the user is clicking on them. </em>/`</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">a:hover &#123;</div><div class="line">  text-decoration: underline;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Will underline all links when the user puts their mouse over them */</div><div class="line"></div><div class="line">a:active &#123;</div><div class="line">  font-weight: bold;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Will make all links bold while the user is clicking on them. */</div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/02/CSS属性和选择器编程术语参考/" data-id="cizf79gcu0000jwch3uuionv5" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/05/02/CSS属性和选择器编程术语参考/" data-id="cizf79gcu0000jwch3uuionv5" class="article-share-link">Поделиться</a>
       
       
     </footer>
@@ -369,7 +315,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/02/13/readme/" data-id="ciz9fg2vp00012gchfdrncjm6" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2015/02/13/readme/" data-id="ciz9fg2vp00012gchfdrncjm6" class="article-share-link">Поделиться</a>
       
       
     </footer>
@@ -394,7 +340,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">Архив</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/02/">February 2015</a></li></ul>
     </div>
@@ -404,7 +350,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Недавние записи</h3>
     <div class="widget">
       <ul>
         
@@ -437,7 +383,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Создано с помощью <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
