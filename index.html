@@ -1,18 +1,544 @@
-doctype html
-html 
-	include partial/head.jade
-	body
-		#container
-			#topnav
-				br
-				br
-				span#subtitle #{config.subtitle}
-				br
-				br
-				span#description #{config.description}
-				br
-				br
-			include partial/nav.jade
-			include partial/content.jade
-			//- include partial/footer.jade
-			script(src='/js/mouseover.js')
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="John Doe">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="我的博客"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="我的博客"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="website" />
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>我的博客</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/about.html">
+                    About
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/contact.html">
+                    Contact
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
+        
+            <h1 id="main-title" class="title">我的博客</h1>
+        
+    </div>
+</header>
+
+        <section class="main">
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2017/02/17/index/">
+                Untitled
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2017-02-17</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <html lang="en">
+
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body>
+<h1>你好,博客</h1>
+
+</body>
+
+</html>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2017/02/17/hello-world/">
+                Hello World
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2017-02-17</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2016/05/02/CSS属性和选择器编程术语参考/">
+                CSS属性和选择器编程术语参考
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2016-05-02</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h1 id="CSS属性和选择器"><a href="#CSS属性和选择器" class="headerlink" title="CSS属性和选择器"></a>CSS属性和选择器</h1><h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>选择器中定义的属性是通过定义一个属性和一个值。 他们用冒号分隔和划定一个分号。</p>
+<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">selector &#123;</div><div class="line">  property: value;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">h1 &#123;</div><div class="line">  color: blue;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="许多属性定义"><a href="#许多属性定义" class="headerlink" title="许多属性定义"></a>许多属性定义</h3><p>每一个CSS规则可以有尽可能多的属性。 他们每个人适用于元素选择器适用于。</p>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">h1 &#123;</div><div class="line">  font-size: 24px;</div><div class="line">  font-weight: bold;</div><div class="line">  border: 1px solid black;</div><div class="line">  color: pink;</div><div class="line">&#125;</div><div class="line">/* This will make all &lt;h1&gt; headers big, bold, pink, and inside of a thin black rectangle! */</div></pre></td></tr></table></figure>
+<h3 id="填充"><a href="#填充" class="headerlink" title="填充"></a>填充</h3><p>填充的内容和边界之间的间距(元素的边缘)。 我们可以调整这个值用CSS来移动边界接近或远离内容。 在这里,div id为“盒子”将得到10 px周围填充它。</p>
+<p>例子</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#box &#123;</div><div class="line">  padding: 10px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="保证金"><a href="#保证金" class="headerlink" title="保证金"></a>保证金</h3><p>保证金是周围的空间元素。 幅度越大,越多我们的元素和元素之间的空间。 我们可以调整保证金将HTML元素接近或远离对方。 这里,div id为“盒子”将得到10 px的上下边缘,和5 px左右的利润。</p>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#box &#123;</div><div class="line">  margin: 10px 5px 10px 5px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="字体类型"><a href="#字体类型" class="headerlink" title="字体类型"></a>字体类型</h3><p>字体类型属性设置一个HTML元素的文本的字体。</p>
+<ul>
+<li>语法</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">p &#123;</div><div class="line">  font-family: Arial, Helvetica, sans-serif;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="选择器"><a href="#选择器" class="headerlink" title="选择器"></a>选择器</h2><p>选择器是什么?</p>
+<p>选择器使用HTML,CSS选择地区的风格。 您可以使用几种不同的方法来选择一个元素。</p>
+<ul>
+<li>语法</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">selector &#123;</div><div class="line">  rules;</div><div class="line">  rules;</div><div class="line">  rules;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="类名称选择器"><a href="#类名称选择器" class="headerlink" title="类名称选择器"></a>类名称选择器</h3><p>您也可以选择HTML元素的类名。 与ID选择器,类选择器选择与匹配所有元素类。</p>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">a.link &#123;</div><div class="line">  font-size: 12px;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* HTML Selected: &lt;a href=&quot;http://google.com&quot; class=&quot;link&quot;&gt;, </div><div class="line">&lt;a href=&quot;http://codecademy.com&quot; class=&quot;link jumbo&quot;&gt; */</div></pre></td></tr></table></figure>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">.jumbo &#123;</div><div class="line">  text-size: 1000px;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* HTML Selected: &lt;a href=&quot;http://codecademy.com&quot; class=&quot;link jumbo&quot;&gt;,</div><div class="line">&lt;span class=&quot;jumbo&quot;&gt; */</div></pre></td></tr></table></figure>
+<h3 id="元素选择器"><a href="#元素选择器" class="headerlink" title="元素选择器"></a>元素选择器</h3><p>你可以选择HTML元素首先通过使用元素的名称。</p>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">body &#123;</div><div class="line">  background-color: #333;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">h1 &#123;</div><div class="line">  color: blue;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">a &#123;</div><div class="line">  text-underline: none;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="ID选择器"><a href="#ID选择器" class="headerlink" title="ID选择器"></a>ID选择器</h3><p>ID选择器是用于选择只有一个项目在一个页面上。 像这个词(“识别”)表明,ID选择器只会选择第一个元素匹配ID。</p>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">#thatThingINeededToStyle &#123;</div><div class="line">  color: blue;</div><div class="line">  font-size: 24px;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* HTML Selected: &lt;span id=&quot;thatThingINeededToStyle&quot;&gt; */</div></pre></td></tr></table></figure>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">a#codecademy &#123;</div><div class="line">  color: purple;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* HTML Selected: &lt;a href=&quot;http://codecademy.com&quot; id=&quot;codecademy&quot;&gt; */</div></pre></td></tr></table></figure>
+<h3 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h3><p>HTML元素还能被选中的属性。</p>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">a[href=&quot;http://codecademy.com&quot;] &#123;</div><div class="line">  color: purple;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* HTML Selected: &lt;a href=&quot;http://codecademy.com&quot;&gt; */</div></pre></td></tr></table></figure>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">input[type=&quot;text&quot;] &#123;</div><div class="line">  width: 100px;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* HTML Selected: &lt;input type=&quot;text&quot;&gt; */</div></pre></td></tr></table></figure>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">input[required] &#123;</div><div class="line">  border: 1px red solid;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* HTML Selected: &lt;input type=&quot;text&quot; required&gt; */</div></pre></td></tr></table></figure>
+<h3 id="子选择器"><a href="#子选择器" class="headerlink" title="子选择器"></a>子选择器</h3><p>您还可以使用多个选择器来得到你想要的确切的元素,通过父母的嵌套。 通过使用大于符号(&gt;),你可以只选择直接的孩子一个元素,只有一个水平。</p>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">ul &gt; li &#123;</div><div class="line">  display: inline-block</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Selects only the first-level list items in all unordered lists in the HTML */</div></pre></td></tr></table></figure>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">ul a &#123;</div><div class="line">  text-underline: none;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Selects all anchors which have an unordered list their ancestry */</div></pre></td></tr></table></figure>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">ul + span &#123;</div><div class="line">  display: inline;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Selects only spans that directly follow an unordered list */</div></pre></td></tr></table></figure>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">a ~ h1 &#123;</div><div class="line">  color: blue;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Selects all h1 elements that are in the general vicinity of an anchor */</div></pre></td></tr></table></figure>
+<h3 id="通用选择器"><a href="#通用选择器" class="headerlink" title="通用选择器"></a>通用选择器</h3><p>通用选择器(*)可用于选择在特定范围内的所有元素。 请注意,通用选择器是最费力选择器性能,并且应该谨慎使用。</p>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">* &#123;</div><div class="line">  background-color: blue;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Selects ALL HTML elements in the page */</div></pre></td></tr></table></figure>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">body * &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Selects ALL children of the body */`</div><div class="line"></div><div class="line">- 例子</div><div class="line"></div><div class="line">`div &gt; * &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Selects ALL first-level children of all divs on the page */`</div></pre></td></tr></table></figure>
+<h3 id="伪类选择符"><a href="#伪类选择符" class="headerlink" title="伪类选择符"></a>伪类选择符</h3><p>伪选择器可以用来缩小选择某些规则。</p>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">li:first-child &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* </div><div class="line">    This selects only &lt;li&gt; elements that have no elements before them</div><div class="line">    &lt;ul&gt;</div><div class="line">      &lt;li&gt;Selected; will be red&lt;/li&gt;</div><div class="line">      &lt;li&gt;Not selected&lt;/li&gt;</div><div class="line">      &lt;li&gt;Not selected&lt;/li&gt;</div><div class="line">    &lt;/ul&gt;</div><div class="line">*/</div><div class="line"></div><div class="line">li:last-child &#123;</div><div class="line">  color: red;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* This does the opposite; only the last &lt;li&gt; will be red. */</div></pre></td></tr></table></figure>
+<ul>
+<li>例子</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">a:hover &#123;</div><div class="line">  text-decoration: underline;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Will underline all links when the user puts their mouse over them */</div><div class="line"></div><div class="line">a:active &#123;</div><div class="line">  font-weight: bold;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/* Will make all links bold while the user is clicking on them. */</div></pre></td></tr></table></figure>
+
+        </div>
+    
+
+</div>
+            
+                
+<div class="post">
+
+    <div class="post-header index">
+        <h1 class="title">
+            <a href="/2015/02/13/readme/">
+                readme
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2015-02-13</span>
+            
+            
+            
+        </div>
+    </div>
+
+    
+        <div class="content">
+            <h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><h2 id="你好"><a href="#你好" class="headerlink" title="你好"></a>你好</h2>
+        </div>
+    
+
+</div>
+            
+        </section>
+    </div>
+</div>
+
+
+
+
+
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    This theme was developed by <a href="https://github.com/klugjo">Jonathan Klughertz</a>. The source code is available on Github. Create Websites. Make Magic.
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" href="/2017/02/17/index/">Untitled</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2017/02/17/hello-world/">Hello World</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2016/05/02/CSS属性和选择器编程术语参考/">CSS属性和选择器编程术语参考</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2015/02/13/readme/">readme</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/klugjo/hexo-theme-alpha-dust">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/?lang=en">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-twitter"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-instagram"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://dribbble.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-dribbble"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://plus.google.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-google-plus"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.behance.net/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-behance"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://500px.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-500px"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:test@example.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="\#">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-rss"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    @Untitled. All right reserved | Design & Hexo <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
