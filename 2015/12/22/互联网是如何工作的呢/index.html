@@ -150,7 +150,7 @@ Web服务器和Web浏览器
             
                 <span class="date">2015-12-22</span>
             
-            <a href="#disqus_thread" class="comments">Comments</a>
+            <a href="#disqus_thread" class="comments">Kommentare</a>
             
         </div>
     </div>
@@ -175,10 +175,8 @@ Web服务器和Web浏览器
 <p><b>解剖一个请求/响应周期</b></p>
 <p>&emsp;&emsp;既然我们已经看了所有的部分,让电脑在互联网上交流,让我们来看看详细的HTTP请求/响应周期。 下面有一些编号的步骤给你一起工作,这样我就可以更有效地展示你的一些概念。</p>
 <ol>
-<li><p>每一个请求/响应开始通过输入一个URL(通常被称为web地址)到浏览器的地址栏,类似<a href="http://www.apple.com。" target="_blank" rel="external">http://www.apple.com。</a> 现在打开一个浏览器,输入这个URL,按回车键/返回(或遵循上面的链接)去苹果主页。 现在,你可能不知道的一件事是,web浏览器实际上不使用url请求从服务器网站;他们使用互联网协议或IP地址(像电话号码或邮政地址,但识别服务器,而不是电话或地址)。 例如,的IP地址<a href="http://www.apple.com17.149.160.10。" target="_blank" rel="external">http://www.apple.com17.149.160.10。</a></p>
-</li>
-<li><p>试着打开一个新的浏览器选项卡或窗口,打字<a href="http://17.149.160.10在地址栏,冲击输入——你会得到相同的网页,你必须在步骤1中。http://www.apple.com基本上是作为一个别名http://17.149.160.10/,但为什么,怎么了?" target="_blank" rel="external">http://17.149.160.10在地址栏,冲击输入——你会得到相同的网页,你必须在步骤1中。http://www.apple.com基本上是作为一个别名http://17.149.160.10/,但为什么,怎么了?</a> 这是因为人们更擅长记单词比长串的数字。 系统,使这项工作叫做DNS,这是一个综合自动目录的所有机器连接到互联网。 当你打<a href="http://www.apple.com到你的地址栏,回车,地址是送到一个名称服务器,试图将它的IP地址。" target="_blank" rel="external">http://www.apple.com到你的地址栏,回车,地址是送到一个名称服务器,试图将它的IP地址。</a> 有数百万的机器连接到互联网,而不是每个DNS服务器都有一个清单为每台机器在线,所以系统在的地方你的请求将被另一个名称服务器来满足你的要求,如果第一个没有正确的信息。 所以DNS系统查找苹果网站,发现它位于17.149.160.10,将这个IP地址发送回你的浏览器。 你的机器发送一个请求到机器指定的IP地址和等待拿回一个响应。 如果一切顺利,该服务器将短消息发送回客户端有消息说一切正常(见图1),其次是web页面本身。 包含在一个这种类型的消息HTTP报头。</p>
-</li>
+<li>每一个请求/响应开始通过输入一个URL(通常被称为web地址)到浏览器的地址栏,类似<a href="http://www.apple.com。" target="_blank" rel="external">http://www.apple.com。</a> 现在打开一个浏览器,输入这个URL,按回车键/返回(或遵循上面的链接)去苹果主页。 现在,你可能不知道的一件事是,web浏览器实际上不使用url请求从服务器网站;他们使用互联网协议或IP地址(像电话号码或邮政地址,但识别服务器,而不是电话或地址)。 例如,的IP地址<a href="http://www.apple.com17.149.160.10。" target="_blank" rel="external">http://www.apple.com17.149.160.10。</a><br>s</li>
+<li>试着打开一个新的浏览器选项卡或窗口,打字 <a href="http://17.149.160.10" target="_blank" rel="external">http://17.149.160.10</a> 在地址栏,冲击输入——你会得到相同的网页,你必须在步骤1中。<a href="http://www.apple.com" target="_blank" rel="external">http://www.apple.com</a> 基本上是作为一个别名 <a href="http://17.149.160.10/" target="_blank" rel="external">http://17.149.160.10/</a> ,但为什么,怎么了? 这是因为人们更擅长记单词比长串的数字。 系统,使这项工作叫做DNS,这是一个综合自动目录的所有机器连接到互联网。 当你打<a href="http://www.apple.com到你的地址栏,回车,地址是送到一个名称服务器,试图将它的IP地址。" target="_blank" rel="external">http://www.apple.com到你的地址栏,回车,地址是送到一个名称服务器,试图将它的IP地址。</a> 有数百万的机器连接到互联网,而不是每个DNS服务器都有一个清单为每台机器在线,所以系统在的地方你的请求将被另一个名称服务器来满足你的要求,如果第一个没有正确的信息。 所以DNS系统查找苹果网站,发现它位于17.149.160.10,将这个IP地址发送回你的浏览器。 你的机器发送一个请求到机器指定的IP地址和等待拿回一个响应。 如果一切顺利,该服务器将短消息发送回客户端有消息说一切正常(见图1),其次是web页面本身。 包含在一个这种类型的消息HTTP报头。</li>
 </ol>
 <p><img src="../img/Article3.gif" alt=""></p>
 <p>&emsp;&emsp;图1:在这种情况下,一切都很好,服务器返回正确的web页面。 如果出现问题,比如你输入地址不正确,你将得到一个HTTP错误回到web浏览器相反——臭名昭著的404年“页面未找到”的错误是你会遇到最常见的例子。</p>
